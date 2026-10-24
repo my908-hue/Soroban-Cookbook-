@@ -2,7 +2,7 @@
 
 Welcome to the Soroban Cookbook documentation. This page gathers quick links, reference material, and pointers to guides and examples.
 
-## Quick Links.
+## Quick Links
 
 | I want to…                  | Go to                                                         |
 | --------------------------- | ------------------------------------------------------------- |
@@ -12,30 +12,35 @@ Welcome to the Soroban Cookbook documentation. This page gathers quick links, re
 | Deploy to testnet           | [Deployment Guide](../book/src/guides/deployment.md)         |
 | Migrate from Ethereum       | [Ethereum → Soroban](../book/src/guides/ethereum-to-soroban.md) |
 | Fix a build or test error   | [Troubleshooting](./troubleshooting.md)                      |
+| Check fuzz test status      | [Fuzz Testing Report](./fuzz-testing.md)                     |
 | Look up a term              | [Glossary](./glossary.md)                                    |
 | See common patterns         | [Common Patterns](./common-patterns.md)                      |
 | Design multi-contract apps  | [Factory, Proxy, and Registry Patterns](./cross-contract-patterns.md) |
+| Integrate wallets into an app | [Wallet Integration Guide](./wallet-integration.md)         |
 | Check best practices        | [Best Practices](./best-practices.md)                        |
 | Follow style guide          | [Style Guide](./style-guide.md)                              |
 | Get a cheat sheet           | [Quick Reference](./quick-reference.md)                      |
 | Understand token design     | [Token Patterns](./token-patterns.md)                        |
 | Compare gas costs           | [Gas Benchmarks](./gas-benchmarks.md)                        |
-| Compare example gas costs   | [Gas Benchmarks](./gas-benchmarks.md)                      |
 
 ## Reference Documentation
 
 - [Best Practices](./best-practices.md) — Security, storage, and code quality guidelines
 - [Style Guide](./style-guide.md) — Naming, documentation, and testing standards
+- [Documentation Style Guide](./doc-style-guide.md) — Writing standards, code example standards, formatting guidelines, and tool recommendations for docs
 - [Quick Reference](./quick-reference.md) — Cheat sheet for common Soroban patterns
 - [Common Patterns](./common-patterns.md) — Reusable patterns with when-to-use guidance
+- [Wallet Integration Guide](./wallet-integration.md) — Connecting Freighter, xBull, Albedo, and WalletConnect-compatible flows to Soroban apps
 - [Token Patterns](./token-patterns.md) — Metadata, mint/burn, wrapping, and access control for tokens
-- [Gas Benchmarks](./gas-benchmarks.md) — CPU and memory cost comparison across examples
+- [RBAC Pattern Comparison](./rbac-pattern-comparison.md) — Guide to choosing the right access control pattern
 - [Governance & Authorization Patterns](./governance-rbac-multisig-timelock.md) — RBAC, multisig, and timelock guidance for secure deployments
 - [Glossary](./glossary.md) — Key terms and concepts
 - [Troubleshooting](./troubleshooting.md) — Build errors, test failures, deployment issues, and workarounds
 - [Dependabot Setup](./dependabot-setup.md) — Automated dependency update configuration
 - [Performance Benchmarks](./benchmarks.md) — Resource usage comparison and optimization tips
+- [Social Media Analytics](./social-media-analytics.md) — Quarterly audience, engagement, mention, and sentiment reporting process
 - [Security Audit Preparation](./security-audit/README.md) — Audit scope, prep checklist, and known-issues log for the intermediate examples
+- [Fuzz Testing Report](./fuzz-testing.md) — Fuzz and property-test coverage, findings, and CI wiring
 
 ### 🎬 Video Walkthrough
 
@@ -49,6 +54,10 @@ Welcome to the Soroban Cookbook documentation. This page gathers quick links, re
 ### Architecture Decision Records
 
 - [ADR-001: Record Architecture Decisions](./adr/001-record-architecture-decisions.md)
+- [ADR-002: Workspace Structure](../book/src/adr/002-workspace-structure.md)
+- [ADR-003: Testing Approach](../book/src/adr/003-testing-approach.md)
+- [ADR-004: CI/CD](../book/src/adr/004-ci-cd.md)
+- [ADR-005: Documentation Publishing](../book/src/adr/005-documentation-publishing.md)
 - [ADR Template](./adr/template.md)
 
 ## Guides
@@ -142,10 +151,10 @@ Step-by-step tutorials in [`book/src/guides/`](../book/src/guides/):
 
 ### Step-by-Step Guides
 
-1. [Getting Started](../guides/getting-started.md)
-2. [Testing Guide](../guides/testing.md)
-3. [Deployment Guide](../guides/deployment.md)
-4. [Ethereum to Soroban](../guides/ethereum-to-soroban.md)
+1. [Getting Started](../book/src/guides/getting-started.md)
+2. [Testing Guide](../book/src/guides/testing.md)
+3. [Deployment Guide](../book/src/guides/deployment.md)
+4. [Ethereum to Soroban](../book/src/guides/ethereum-to-soroban.md)
 
 ### Topic-Specific Guides
 
@@ -189,4 +198,4 @@ Step-by-step tutorials in [`book/src/guides/`](../book/src/guides/):
 
 ---
 
-Missing something? [Open an issue](https://github.com/Soroban-Cookbook/Soroban-Cookbook-/issues/new) or [submit a PR](../CONTRIBUTING.md).
+Missing something? [Open an issue](https://github.com/Soroban-Cookbook/Soroban-Cookbook/issues/new) or [submit a PR](../CONTRIBUTING.md).
